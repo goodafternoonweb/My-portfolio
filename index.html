@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background: black;
+            color: white;
+            overflow: hidden;
+        }
+        .background-video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+        .container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100vh;
+            position: relative;
+            text-align: left;
+            z-index: 1;
+        }
+        .info {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 400px;
+        }
+        .info h1 {
+            color: cyan;
+        }
+        .info p {
+            margin: 5px 0;
+        }
+        .profile-container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            position: relative;
+            height: 100%;
+        }
+        .profile-img-container {
+            position: relative;
+            display: flex;
+            align-items: flex-end;
+            height: 100%;
+        }
+        .profile-img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+        .profile-img-container::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 100px;
+            background: linear-gradient(to bottom, transparent, black);
+            z-index: 2;
+        }
+    </style>
+</head>
+<body>
+    <video class="background-video" autoplay loop muted>
+        <source src="https://raw.githubusercontent.com/goodafternoonweb/My-portfolio/main/Cinematic%20animations%20of%20Saturn.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="container">
+        <div class="profile-container">
+            <div class="profile-img-container">
+                <img src="https://raw.githubusercontent.com/goodafternoonweb/My-portfolio/main/406680238_882412106866615_1838460760709664726_n-removebg-preview.png" alt="Your Picture" class="profile-img">
+            </div>
+        </div>
+        <div class="info">
+            <h1>I'm Aashish Jha</h1>
+            <p><strong>HTML, CSS, JS, PY Designer</strong></p>
+            <p><strong>D.O.B:</strong> 22-09-2009</p>
+            <p><strong>Phone:</strong> +977 9827653644</p>
+            <p><strong>Address:</strong> Shanti-Nagar, Janakpur Dham-4</p>
+            <p><strong>Email:</strong> aashishjha9844@gmail.com</p>
+            <p><strong>Website:</strong> <a href="https://yourusername.github.io/repositoryname/" target="_blank">www.myresume.com</a></p>
+        </div>
+    </div>
+</body>
+</html>
